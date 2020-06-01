@@ -65,25 +65,25 @@ function Calculadora() {
           <Button onClick={() => adicionarNumero('7')}>7</Button>
           <Button onClick={() => adicionarNumero('8')}>8</Button>
           <Button onClick={() => adicionarNumero('9')}>9</Button>
-          <Button onClick={() => definirOperacao('/')}>/</Button>
+          <Button onClick={() => definirOperacao(DIVISAO)}>/</Button>
         </div>
         <div className='row'>
           <Button onClick={() => adicionarNumero('4')}>4</Button>
           <Button onClick={() => adicionarNumero('5')}>5</Button>
           <Button onClick={() => adicionarNumero('6')}>6</Button>
-          <Button onClick={() => definirOperacao('*')}>X</Button>
+          <Button onClick={() => definirOperacao(MULTIPLICACAO)}>X</Button>
         </div>
         <div className='row'>
           <Button onClick={() => adicionarNumero('1')}>1</Button>
           <Button onClick={() => adicionarNumero('2')}>2</Button>
           <Button onClick={() => adicionarNumero('3')}>3</Button>
-          <Button onClick={() => definirOperacao('+')}>+</Button>
+          <Button onClick={() => definirOperacao(SOMA)}>+</Button>
         </div>
         <div className='row'>
           <Button onClick={() => adicionarNumero('.')}>.</Button>
           <Button onClick={() => adicionarNumero('0')}>0</Button>
           <Button onClick={acaoCalcular}>=</Button>
-          <Button onClick={() => definirOperacao ('-')}>-</Button>
+          <Button onClick={() => definirOperacao (SUBTRACAO)}>-</Button>
         </div>
         <div className='row'>
           <ClearButton onClick={limpar}>Apagar</ClearButton>
