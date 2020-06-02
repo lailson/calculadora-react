@@ -60,7 +60,7 @@ function Calculadora() {
   return (
     <div className="app">
       <div className="calc-wrapper">
-        <Input input={txtNumeros}></Input>
+        <Input data-testid="txtNumeros" input={txtNumeros}></Input>
         <div className='row'>
           <Button onClick={() => adicionarNumero('7')}>7</Button>
           <Button onClick={() => adicionarNumero('8')}>8</Button>
